@@ -38,6 +38,7 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     long_description=readme,
+    long_description_content_type='text/markdown',
     packages=['suitcase.{{ cookiecutter.subpackage_name }}',
               'suitcase.{{ cookiecutter.subpackage_name }}.tests'],
     entry_points={
