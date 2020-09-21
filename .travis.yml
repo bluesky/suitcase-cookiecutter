@@ -20,6 +20,6 @@ script:
   # Now install suitcase-example's development dependencies.
   - pip install -r suitcase-example/requirements-dev.txt 
   # Run the example parametrized test.
-  - pytest suitcase-example/
-  # Run flake8.
-  - flake8 --max-line-length=115 suitcase-example/
+  - cd suitcase-example
+  - pytest
+  - flake8
